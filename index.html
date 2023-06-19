@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- Cabeçalho -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-commerce Gamer</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+  <header>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/Logo SENAI.png" alt="logo" class="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Favoritos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Carrinho</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Login</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 custom-input" type="search" placeholder="Encontre seus jogos favoritos" aria-label="Search">
+            <button class="btn btn-outline-success custom-btn" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Carrossel -->
+    <section id="section-banners" class="container-fluid">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner1.jpg" class="d-block w-100" alt="Banner1">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Encontre as melhores ofertas!</h5>
+              <p>Descubra uma seleção incrível de produtos com preços imperdíveis.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/banner2.PNG" class="d-block w-100" alt="Banner3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Viva a experiência gamer!</h5>
+              <p>Explore um universo de jogos emocionantes e mergulhe na diversão sem limites.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/banner3.PNG" class="d-block w-100" alt="Banner3">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Descubra o mundo dos games!</h5>
+              <p>Prepare-se para aventuras épicas e desafios empolgantes em cada jogada.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Botão Anterior/Próximo Carrossel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- Seção de Vendidos Linha 1 -->
+    <section id="section-vendidos" class="container-fluid">
+      <h2>OS MAIS VENDIDOS</h2>
+      <h3>Venha conhecer um pouco dos nossos produtos</h3>
+      
+      <div class="card-group">
+        <div class="card" style="width: 18rem;">
+          <img src="img/Mouse Gamer Cortado.jpg" class="card-img-top" alt="Mouse Gamer">
+          <div class="card-body">
+            <h5 class="card-title">Mouse Gamer</h5>
+            <p class="card-text">Redragon</p>
+            <p class="preco">R$ 150,00</p>
+            <a class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+    
+        <div class="card" style="width: 18rem;">
+          <img src="img/Joystick PS5 Cortado.jpg" class="card-img-top" alt="Controle PS5">
+          <div class="card-body">
+            <h5 class="card-title">Controle PS5</h5>
+            <p class="card-text">Sony</p>
+            <p class="preco">R$ 450,00</p>
+            <a class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+    
+        <div class="card" style="width: 18rem;">
+          <img src="img/Headset Gamer Cortado.jpg" class="card-img-top" alt="Headset Gamer">
+          <div class="card-body">
+            <h5 class="card-title">Headset Gamer</h5>
+            <p class="card-text">Razer</p>
+            <p class="preco">R$ 740,00</p>
+            <a class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <img src="img/Intel Core I7 10700K Cortado.jpeg" class="card-img-top" alt="Intel Core I7">
+          <div class="card-body">
+            <h5 class="card-title">Processador Core I7</h5>
+            <p class="card-text">Intel</p>
+            <p class="preco">R$ 1500,00</p>
+            <a class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Seção de Vendidos Linha 2 -->
+    <section id="section-vendidos" class="container-fluid">
+      <div class="card-group">
+        <div class="card" style="width: 18rem;">
+          <img src="img/Joystick Xbox Gamer Cortado.jpg" class="card-img-top" alt="Controle Xbox">
+          <div class="card-body">
+            <h5 class="card-title">Controle Xbox</h5>
+            <p class="card-text">Joystick</p>
+            <p class="preco">R$ 409,00</p>
+            <a class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="img/Ryzen 5 Cortado.jpg" class="card-img-top" alt="Ryzen 5 3600">
+          <div class="card-body">
+            <h5 class="card-title">Processador Ryzen 5 3600</h5 >
+            <p class="card-text">AMD</p>
+            <p class="preco">R$ 589,00</p>
+            <a class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="img/VR Cortado.jpg" class="card-img-top" alt="Óculos de Realidade Virtual">
+          <div class="card-body">
+            <h5 class="card-title">Óculos de Realidade Virtual</h5>
+            <p class="card-text">VR Shinecon</p>
+            <p class="preco">R$ 468,00</p>
+            <a class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="img/Nintendo Switch Cortado.jpg" class="card-img-top" alt="Nintendo Switch">
+          <div class="card-body">
+            <h5 class="card-title">Switch</h5>
+            <p class="card-text">Nintendo</p>
+            <p class="preco">R$ 2253,00</p>
+            <a class="btn btn-primary">Adquirir</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Quem somos nós -->
+    <h1 class="who-we-are">Quem somos nós</h1>
+    <section class="container-fluid" style="display: flex; align-items: center; margin-bottom: 3rem; margin-top: 1rem;">
+      <img src="img/Joystick.jpg" style="width: 50%; border-radius: 10px;" alt="Joystick">
+      <div class="know-more">
+        <p style="margin-left: 10px; margin-bottom: 0;font-family:'Poppins', sans-serif; line-height: 25px; letter-spacing: 2px;">Nossa empresa tem como missão inspirar e valorizar a paixão pelas áreas da tecnologia, jogos, conteúdos, entretenimento e inovação, proporcionando uma experiência única e gerando prazer aos nossos clientes. Buscamos ampliar nosso alcance no mundo gamer e tecnológico, visando alcançar um público diversificado. Temos como princípios fundamentais a ética, a inovação, o respeito aos clientes e o cumprimento das leis. Estamos comprometidos em oferecer produtos e serviços de qualidade, proporcionando uma experiência completa e satisfatória aos nossos consumidores.</p>
+        <a class="btn btn-primary" style="margin-top: 30px;">Saiba Mais</a>
+      </div>
+    </section>
+  </main>
+  <!-- Rodapé -->
+  <footer class="container-fluid">
+    <img src="img/Logo SENAI.png" alt="Logo SENAI" class="logo-senai">
+    <img src="img/Ícone Facebook.png" alt="Logo Facebook" class="logo-facebook">
+    <img src="img/Ícone Instagram.png" alt="Logo Instagram" class="logo-instagram">
+    <p>Endereço</p>
+    <p>CNPJ XX.XXX.XXX/0001-XX</p>
+    <p>CEP 00000-000</p>
+    <p>atendimento@nomedosite.com</p>   
+  </footer>
+  <!-- Botão Voltar ao Topo -->
+  <button id="voltar-topo" type="button" class="btn btn-outline-primary" onclick="topo()">&uarr; Voltar ao topo</button>
+
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+</html>
